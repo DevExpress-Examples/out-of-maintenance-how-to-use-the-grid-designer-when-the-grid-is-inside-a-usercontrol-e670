@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [BaseGridControl.cs](./CS/BaseGridControl.cs) (VB: [BaseGridControl.vb](./VB/BaseGridControl.vb))
+* [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
+* [ProductsGridControl.cs](./CS/ProductsGridControl.cs) (VB: [ProductsGridControl.vb](./VB/ProductsGridControl.vb))
+* [Program.cs](./CS/Program.cs) (VB: [Program.vb](./VB/Program.vb))
+<!-- default file list end -->
 # How to use the grid designer when the grid is inside a UserControl.
 
 

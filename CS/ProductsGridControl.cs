@@ -14,7 +14,7 @@ namespace InheritedUserControl {
 
         private void ProductsGridControl_Load(object sender, EventArgs e) {
             if(!DesignMode)
-                productsTableAdapter.Fill(northwindDataSet.Products);
+                productsBindingSource.DataSource = DataHelper.GetData();
             gridView1.ExpandAllGroups();
         }
     }

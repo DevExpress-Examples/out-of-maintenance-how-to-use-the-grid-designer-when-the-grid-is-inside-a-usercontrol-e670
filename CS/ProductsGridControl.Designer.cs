@@ -24,9 +24,7 @@ namespace InheritedUserControl {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            this.northwindDataSet = new InheritedUserControl.NorthwindDataSet();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsTableAdapter = new InheritedUserControl.NorthwindDataSetTableAdapters.ProductsTableAdapter();
             this.colProductID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colProductName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSupplierID = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -39,7 +37,6 @@ namespace InheritedUserControl {
             this.colDiscontinued = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,20 +66,6 @@ namespace InheritedUserControl {
             this.gridView1.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colCategoryID, DevExpress.Data.ColumnSortOrder.Ascending),
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.colProductName, DevExpress.Data.ColumnSortOrder.Ascending)});
-            // 
-            // northwindDataSet
-            // 
-            this.northwindDataSet.DataSetName = "NorthwindDataSet";
-            this.northwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // productsBindingSource
-            // 
-            this.productsBindingSource.DataMember = "Products";
-            this.productsBindingSource.DataSource = this.northwindDataSet;
-            // 
-            // productsTableAdapter
-            // 
-            this.productsTableAdapter.ClearBeforeFill = true;
             // 
             // colProductID
             // 
@@ -168,7 +151,6 @@ namespace InheritedUserControl {
             this.Load += new System.EventHandler(this.ProductsGridControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -177,7 +159,6 @@ namespace InheritedUserControl {
         #endregion
 
         private System.Windows.Forms.BindingSource productsBindingSource;
-        private NorthwindDataSet northwindDataSet;
         private DevExpress.XtraGrid.Columns.GridColumn colProductID;
         private DevExpress.XtraGrid.Columns.GridColumn colProductName;
         private DevExpress.XtraGrid.Columns.GridColumn colSupplierID;
@@ -188,6 +169,5 @@ namespace InheritedUserControl {
         private DevExpress.XtraGrid.Columns.GridColumn colUnitsOnOrder;
         private DevExpress.XtraGrid.Columns.GridColumn colReorderLevel;
         private DevExpress.XtraGrid.Columns.GridColumn colDiscontinued;
-        private InheritedUserControl.NorthwindDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
     }
 }
